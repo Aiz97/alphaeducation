@@ -2,7 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Khula:wght@400;700&display=swap');
-
+@font-face {
+    font-family: "Futura PT Book"; 
+    src: url("./assets/fonts/Futura PT Book.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "Futura PT Heavy"; 
+    src: url("./assets/fonts/Futura PT Heavy.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
 /*Basic reset*/
 *,
 *::before,
@@ -71,7 +82,7 @@ header > .container {
 }
 .btn {
     display: inline-block;
-    width: 198px;
+    width: 176px;
     height: 56px;
     margin-right: 22px;
     font-style: normal;
@@ -138,4 +149,129 @@ header > .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+/* About */
+.about {
+    margin-bottom: 155px;
+}
+.about > .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.left-images {
+    flex-basis: 65%;
+    background-image: url(./assets/img/Ellipse67.png);
+    background-size: 526px 526px;
+    background-repeat: no-repeat;
+    background-position-x: 48px;
+    position: relative;
+    left: -106px;
+}
+.about-text {
+    flex-basis: 35%;
+}
+.about-title {
+    font-family: 'Futura PT Heavy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 57px;
+    color: #132A50;
+}
+.frame {
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/img/Frame\ 15.png);
+    background-position: -81px 105px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    left: 32px;
+    position: relative;
+}
+.average {
+    width: 341px;
+    height: 200px;
+    background-image: url(./assets/img/Average\ block.png);
+    background-position: 17px -44px;
+    background-size: 357px 187px;
+    background-repeat: no-repeat;
+    z-index: 10;
+    position: relative;
+    top: -496px;
+    left: 72px;
+}
+.deadline {
+    width: 341px;
+    height: 200px;
+    background-image: url(./assets/img/Next\ deadline\ block.png);
+    background-position: 8px -44px;
+    background-size: 357px 187px;
+    background-repeat: no-repeat;
+    z-index: 10;
+    position: relative;
+    top: -334px;
+    left: 107px;
+}
+.development {
+    width: 682px;
+    height: 200px;
+    background-image: url(./assets/img/Chart.png);
+    background-position: 361px -7px;
+    background-size: 358px 187px;
+    background-repeat: no-repeat;
+    z-index: 10;
+    position: relative;
+    top: -847px;
+    left: 106px;
+}
+.about2 > .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.about-text2 {
+    width: 406px;
+    flex-shrink: 0;
+}
+.about-title2 {
+    width: 479px;
+    font-family: 'Futura PT Heavy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 57px;
+    color: #132A50;
+}
+.right-images {
+    background-image: url(./assets/img/Ellipse67.png);
+    background-size: 526px 526px;
+    background-repeat: no-repeat;
+    background-position-x: 125px;
+    position: relative;
+    left: 143px;
+    top: -46px;
+}
+.dashboard {
+    width: 795px;
+    height: 543px;
+    background-image: url(./assets/img/Dashboard.png);
+    background-size: 875px 568px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -35px;
+    left: -77px;
+}
+.course {
+    width: 373px;
+    height: 428px;
+    background-image: url(./assets/img/Web\ development.png);
+    background-size: 389px 404px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -393px;
+    left: 417px;
 }
