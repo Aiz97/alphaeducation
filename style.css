@@ -31,6 +31,7 @@ ul{
     padding: 0 1.5rem;
     margin: 0 auto;
 }
+/* Header */
 .header {
     width: 100%;
     height: 90px;
@@ -69,12 +70,14 @@ header > .container {
     transition: .2s;
 }
 .btn {
-    width: 248px;
-    height: 70px;
+    display: inline-block;
+    width: 198px;
+    height: 56px;
+    margin-right: 22px;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 39px;
+    font-size: 19px;
+    line-height: 27px;
     color: #FFFFFF;
     background: #474BFF;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
@@ -91,7 +94,48 @@ header > .container {
     width: 108px;
     height: 39px;
     font-weight: 400;
-    font-size: 19px;
     line-height: 39px;
     color: #FFFFFF;
+}
+/* Hero */
+.hero {
+    width: 100%;
+    height: 100vh;
+    margin-top: 78px;
+    background-image: url(./assets/img/main-bg.png);
+    background-position: 636px -27px;
+    background-repeat: no-repeat;
+    background-size: 804px 438px;
+}
+.main-heading {
+    width: 710px;
+}
+.title {
+    margin: 32px 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 62px;
+    color: #132A50;
+    text-transform: uppercase;
+}
+.subtitle {
+    margin: 20px 0;
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    color: #000000;
+}
+.main-heading > .subtitle {
+    width: 560px;
+}
+.clients {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
