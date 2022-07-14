@@ -24,6 +24,7 @@
 }
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'ABeeZee', sans-serif;
@@ -33,7 +34,7 @@ a{
     text-decoration: none;
     color: inherit;
 }
-ul{
+ul, li {
     list-style: none;
 }
 .container{
@@ -678,7 +679,8 @@ header > .container {
     height: 880px;
     background-image: url(./assets/img/form-bg.png);
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: 0px 300px;
+    background-size: 400px 500px;
 }
 .contact-title {
     font-family: 'Futura PT';
@@ -750,3 +752,65 @@ label {
 .footer {
     height: 400px;
     background-color: #474BFF;
+    color: #FFFFFF;
+}
+.footer > .container {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-info {
+    width: 273px;
+}
+.footer-info img {
+    width: 232px;
+    height: 52px;
+}
+.footer-text {
+    margin: 20px 0;
+}
+.socials-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.socials-item {
+    margin-right: 20px;
+}
+.socials-link img {
+    width: 30px;
+    height: 30px;
+}
+.footer h3 {
+    margin-bottom: 15px;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.links-list,
+.fcontact-text {
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.links-item,
+.fcontact-text {
+    margin-bottom: 28px;
+}
+.footer-text {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+}
+.fcontact-text {
+    display: block;
+}
