@@ -1030,6 +1030,7 @@ label {
     .container{
         max-width: 390px;
         padding: 0 20px;
+        overflow-x: hidden;
     }
     .header { 
         height: 60px;
@@ -1053,7 +1054,7 @@ label {
         line-height: 18px;
         transition: 0.3s ease-out;
         opacity: 100;
-        transform: translateX(390px);
+        transform: translateX(-390px);
     }
     .open {
         transform: translateX(0);
