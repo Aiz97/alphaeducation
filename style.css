@@ -419,7 +419,7 @@ header > .container {
 }
 /* Services */
 .services {
-    height: 850px;
+    height: 100%;
     margin-top: 20px;
     background-color: #474BFF;
     padding: 22px 0;
@@ -623,7 +623,7 @@ header > .container {
 /* Customer stories */
 .customers {
     width: 100%;
-    height: 481px;
+    height: 100%;
     padding: 50px 0;
     background-image: url(./assets/img/customer-bg.png);
     background-repeat: no-repeat;
@@ -895,7 +895,7 @@ textarea {
     bottom: 0;
     left: 10px;
     margin: 35px 0;
-    width: 27px;
+    width: 28px;
     height: 27px;
     background: url(./assets/icon/comment.svg) no-repeat;
     background-size: cover;
@@ -1026,19 +1026,20 @@ label {
     }
 }
 /* Mobile */
-@media (max-width: 391px) {
+@media (max-width: 26.75em) {
     .container{
-        max-width: 390px;
         padding: 0 20px;
-        overflow-x: hidden;
     }
     .header { 
         height: 60px;
         margin-top: 30px;
     }
     .nav-list {
+        top:0;
+        left: 0;
         width: 100%;
         height: 110%;
+        z-index: 3;
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -1048,13 +1049,11 @@ label {
         color: #FFFFFF;
         text-align: center;
         justify-content: center;
-        left: 0;
-        top:0;
         font-size: 24px;
         line-height: 18px;
         transition: 0.3s ease-out;
         opacity: 100;
-        transform: translateX(-390px);
+        transform: translateX(-100%);
     }
     .open {
         transform: translateX(0);
@@ -1077,6 +1076,7 @@ label {
         height: 30px;
         right:18px;
         top:39px;
+        z-index: 10;
         position: absolute;
         transform:rotate(0deg);
         transition: 0.5s ease-in-out;
@@ -1113,7 +1113,6 @@ label {
         height:6px;
         content:" ";
         position:absolute;
-        z-index:3;
         top:23px;
         opacity:1;
     }
@@ -1149,9 +1148,10 @@ label {
         height: 38px;
         font-size: 14px;
         margin-right: 10px;
+        margin-top: 10px;
     }
     .hero {
-        height: 620px;
+        height: 100%;
         margin-top: 0;
         background:none;
     }
@@ -1174,12 +1174,13 @@ label {
         display: none;
     }
     .main-heading > .subtitle {
-        width: 340px;
+        width: 100%;
     }
     .clients {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        align-items: center;
     }
     .clients img {
         width: 100px;
@@ -1201,22 +1202,22 @@ label {
         height: 50px;
     }
     .about {
-        height: 800px;
-        padding-top: 0px;  
-        padding-left: 20px;
+        height: 130%;
+        padding-top: 0px; 
         background-image: none;
     }
-    .about > .container {
+    .about > .container,
+    .about2 > .container {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        align-items: center;
     }
-    .left-images {
-        background-position-x: 4px;
+    .left-images { 
         height: 345px;
+        background-position-x: 4px;
         flex-basis: auto;
         background-size: 307px 304px;
-        left: 0;
+        left: 0px;
     }
     .frame {
         width: 324px;
@@ -1233,6 +1234,7 @@ label {
         background-size: 206px 109px;
         top: -131px;
         left: 135px;
+        z-index: 1;
     }
     .deadline {
         width: 207px;
@@ -1241,6 +1243,7 @@ label {
         background-size: 231px 122px;
         top: -335px;
         left: -29px;
+        z-index: 1;
     }
     .development {
         width: 248px;
@@ -1249,9 +1252,10 @@ label {
         background-size: 231px 122px;
         top: -276px;
         left: -23px;
+        z-index: 1;
     }
     .about-text {
-        width: 320px;
+        width: 100%;
     }
     .about-title,
     .about-title2 {
@@ -1259,17 +1263,12 @@ label {
         line-height: 46px; 
     }
     .about2 {
-        padding-top: 15px;
+        height: 130%;
+        padding-top: 50px;
         background: none;
     }
-    .about2 > .container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
     .about-text2 {
-        width: 330px;
-        padding-left: 20px;
+        width: 100%;
         order: 2;
         height: 420px;
     }
@@ -1278,7 +1277,7 @@ label {
     }
     .right-images {
         height: 323px;
-        left: 0;
+        left: 0px;
         flex-basis: auto;
         background-size: 307px 304px;
         background-position: 27px;
@@ -1289,7 +1288,7 @@ label {
         background-image: url(./assets/img/Dashboard.png);
         background-size: 422px 277px;
         top: 33px;
-        left: -37px;
+        left: -24px;
     }
     .grade {
         display: none;
@@ -1298,20 +1297,21 @@ label {
         margin-right: 0;
     }
     .services {
-        width: 390px;
+        width: 100%;
         height: 720px;
-        margin-top: 0px;
+        margin-top: 40px;
         display: flex;
         align-items: center;
     }
     .grid {
         display: grid;
-        grid-template-columns: 150px 150px; 
-        grid-template-rows: 150px 150px 150px;
+        grid-template-columns: repeat(2, minmax(150px, 200px));
+        grid-template-rows: repeat(3, 150px);
+        grid-gap: 30px;
     }
     .service {
-        width: 160px;
-        height: 160px;
+        width: 150px;
+        height: 150px;
         padding: 10px 18px;
         text-align: center;
         align-items: center;
@@ -1347,7 +1347,7 @@ label {
         align-items: center;
     }
     .course {
-        width: 342px;
+        width: 100%;
         height: 320px;
     }
     .course-info {
@@ -1366,6 +1366,8 @@ label {
         margin-right: 10px;
     }
     .customers {
+        width: 100%;
+        height: 600px;
         background-image: none;
     }
     .contact {
@@ -1378,7 +1380,7 @@ label {
         margin: 40px 0;
     }
     .form-wrapper {
-        width: 350px;
+        width: 100%;
         height: 500px;
         padding: 30px;
         text-align: center;
